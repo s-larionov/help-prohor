@@ -55,7 +55,6 @@ return array(
 			'paths'         => array(
 				'layouts' => 'application.views.layouts',
 				'common'  => 'application.views.common',
-				'admin'   => 'admin.views',
 			),
 			'functions'     => array(
 				'count' => 'count',
