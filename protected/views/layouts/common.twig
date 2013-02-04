@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html lang="ru-RU">
+<head>
+	<meta charset="UTF-8">
+	<title>{{ this.pageTitle }}</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	{#<link rel="shortcut icon" href="/favicon.ico" />#}
+	<link rel="stylesheet" href="/css/style.css" type="text/css" />
+	<script type="text/javascript" src="/js/jquery.min.js"> </script>
+</head>
+<body>
+{% include '@common/header.twig' %}
+<div class="row row-wrapper">
+	<div class="span3">
+		{{ block('left') }}
+	</div>
+	<div class="span9">
+		{{ block('breadcrumbs') }}
+		<h1>{{ this.pageTitle }}</h1>
+
+		<div id="content">
+		{{ block('content') }}
+		</div>
+	</div>
+</div>
+{% include '@common/footer.twig' %}
+</body>
+</html>

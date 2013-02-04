@@ -1,0 +1,10 @@
+{% extends '@layouts/common.twig' %}
+{% do this.setPageTitle('Страница не найдена') %}
+
+{% block content %}
+	<p>
+		Запрашиваемая вами страница не&nbsp;найдена на&nbsp;сервере.<br>
+		Возможно она была удалена или&nbsp;перенесена в&nbsp;другой раздел&nbsp;—<br>
+		попробуйте найти ее, начав с <a href="{{ this.createUrl('main/index') }}">главной страницы</a>
+	</p>
+{% endblock %}
