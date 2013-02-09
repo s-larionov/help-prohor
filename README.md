@@ -31,16 +31,16 @@ cd /path/to/project/protected
 ```
 
 ## Configure nginx
-### club.vladmama.ru.conf
+### prohor.dev.conf
 ```nginx
 server {
 	listen 80;
-	server_name club.vladmama.ru;
+	server_name prohor.dev;
 
-	access_log log/nginx/club.vladmama.ru-access.log;
-	error_log log/nginx/club.vladmama.ru-error.log;
+	access_log log/nginx/prohor.dev-access.log;
+	error_log log/nginx/prohor.dev-error.log;
 
-	set $www_root /opt/club.vladmama.ru/public;
+	set $www_root /opt/prohor.dev/public;
 	set $app_mode production;
 
 	include include/yii.conf;

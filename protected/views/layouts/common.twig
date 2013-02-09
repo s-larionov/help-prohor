@@ -10,20 +10,197 @@
 	<script type="text/javascript" src="/js/jquery.min.js"> </script>
 </head>
 <body>
-{% include '@common/header.twig' %}
-<div class="row row-wrapper">
-	<div class="span3">
-		{{ block('left') }}
-	</div>
-	<div class="span9">
-		{{ block('breadcrumbs') }}
-		<h1>{{ this.pageTitle }}</h1>
+<div class="wrap">
+    <div class="header">
+        <div class="header-text">
+            Маленькому Проше нужна помощь!
+        </div>
+        <div class="header-img">
 
-		<div id="content">
-		{{ block('content') }}
-		</div>
-	</div>
+        </div>
+        <div class="header-description">
+            <h1>Писачев<br>Прохор Максимович</h1>
+            <p><span>Дата рождения:</span>  26 марта 2010 г (2 года)</p>
+            <p><span>Диагноз:</span> эмбриональная рабдомиосаркома</p>
+            <h2>Срочно требуется любая помощь в лечении ребенка!</h2>
+            <ul class="collapse">
+                <li class="collapse-item">
+                    <a class="collapse-link" href="#">История прохора</a>
+                    <div class="collapse-content">
+
+                    </div>
+                </li>
+                <li class="collapse-item">
+                    <a class="collapse-link" href="#">Медицинские документы и счета</a>
+                    <div class="collapse-content">
+
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+        <div class="grey-box">
+            <h1>На лечение Проши требуется еще собрать <span>10 000 000 рублей<span> из 15 000 000 рублей</h1>
+            <p>Сумма ориентировочная, может измениться как в меньшую, так и в большую сторону, в зависимости от хода лечения.</p>
+            <ul class="collapse collapse_2-col">
+                <li class="collapse-item">
+                    <a class="collapse-link" href="#">Информация по поступлениям средств</a>
+                    <div class="collapse-content">
+
+                    </div>
+                </li>
+                <li class="collapse-item">
+                    <a class="collapse-link" href="#">Отчеты по расходам</a>
+                    <div class="collapse-content">
+
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <h2>Как помочь?</h2>
+        <div class="grid bank-info">
+            <div class="grid__cell-1-to-2">
+                <div class="border-box">
+                    <h3>Сбербанк</h3>
+                    <p><strong>Банковские карты</strong><br>
+                       №4276880013461987, Чернова Анна Викторовна<br>
+                       №4276850020150626, Писачев Максим Александрович</p>
+                    <p><strong>Расчетный счет</strong><br>
+                       Получатель: Чернова Анна Викторовна<br>
+                       Счет получателя: 40817810450002943110.<br>
+                       Банк получателя: Дальневосточный Банк ОАО Сбербанка России г. Хабаровск.<br>
+                       Кор/сч.: 30101810600000000608 в ГРКЦ ГУ Банка России по Хабаровскому краю.<br>
+                       БИК 040813608.<br>
+                       ИНН 7707083893.<br>
+                       КПП 790102001.<br>
+                       Назначение платежа: Зачисление на карту 639002509016408547 для Анны Викторовны Черновой.<br>
+                       Без НДС.
+                    </p>
+                </div>
+                <div class="border-box">
+                    <h3>KOREA EXCHANGE BANK (для перевода из-за границы):</h3>
+                    <p>Bank name : KOREA EXCHANGE BANK, SHINCHON BRANCH<br>
+                    Swift code : KOEXKRSE<br>
+                    Bank address : 121-806 NOGOSAN-DONG MAPO-GU SEOUL KOREA 107-1<br>
+                    Bank tel : 02)718-2281<br>
+                    Beneficiary name : PISACHEV MAKSIM<br>
+                    Beneficiary A/C : 650-008836-166 ( долларовый счет )<br>
+                    620-218719-796 (счет в воннах)<br>
+                    Beneficiary address : Seoul, Sodeamoon-Gu,Changchon-Dong 53,#60</p>
+                </div>
+            </div>
+            <div class="grid__cell-1-to-2">
+                <div class="border-box">
+                    <h3>Альфа-банк</h3>
+                    <p><strong>Банковские карты</strong><br>
+                       ОАО “Альфа-банк”.<br>
+                       Счет 40817810808600014643,<br>
+                       к/сч 30101810200000000593 в ОПЕРУ Московского ГТУ Цб РФ,<br>
+                       БИК 044525593, ИНН 7728168971<br>
+                       Писачев Максим Александрович.</p>
+                </div>
+                <div class="border-box">
+                    <h3>QIWI кошелек </h3>
+                    <p>9084484886</p>
+                </div>
+                <div class="border-box">
+                    <h3>Яндекс.Денги</h3>
+                    <p>410011747580674</p>
+                    <div class="ya-box">
+
+                    </div>
+                </div>
+                <div class="border-box">
+                    <h3>Билайн 8(967)-957-14-64</h3>
+                    <p class="gray-color">На данный номер возможно перечислить деньги так же, как вы это делаете, пополняя баланс своего мобильного счета. Оплату модно провести через терминал, у мобильных стоек, в отделениях «Билайн» и там, где принимают платежи «Билайна». Эти деньги выводятся через банк наличными. </p>
+                </div>
+            </div>
+        </div>
+        <div class="banks">
+            <h2>Копилки <span>(адреса)</span></h2>
+            <ul class="collapse collapse_2-col">
+                <li class="collapse-item">
+                    <a class="collapse-link" href="#">Владивосток</a>
+                    <div class="collapse-content">
+
+                    </div>
+                </li>
+                <li class="collapse-item">
+                    <a class="collapse-link" href="#">Уссурийск</a>
+                    <div class="collapse-content">
+
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <h1>Не оставайтесь равнодушными.<br>
+            Вместе мы спасем этого чудного малыша!
+        </h1>
+        <div class="grey-box carousel">
+            <a class="carousel-prev" href="#"></a>
+            <a class="carousel-next" href="#"></a>
+            <ul>
+                <li>
+                    <img src="/images/image-1.png" alt="">
+                </li>
+                <li>
+                    <img src="/images/image-2.png" alt="">
+                </li>
+                <li>
+                    <img src="/images/image-3.png" alt="">
+                </li>
+            </ul>
+        </div>
+        <div class="grid links">
+            <div class="grid__cell-2-to-3">
+                <div>
+                    <h3>Ссылки</h3>
+                    <ul class="social">
+                        <li><a class="social-fb" href="#"></a></li>
+                        <li><a class="social-od" href=""></a></li>
+                        <li><a class="social-vk" href=""></a></li>
+                        <li><a class="social-vladmama" href=""></a></li>
+                        <li><a class="social-drom" href=""></a></li>
+                    </ul>
+                    <p><a href="#">Мото-ДВ</a><br>
+                        <a href="#">Форум Уссурийска</a><br>
+                        <a href="#">Уссурийский родительский форум</a><br>
+                        <a href="#">Улов.ру</a><br>
+                        <a href="#">Совместные покупки</a><br>
+                        <a href="#">ЖЖ</a></p>
+                </div>
+                <div>
+                    <h3>Ютуб</h3>
+                    <a href="http://www.youtube.com/watch?v=I1fFYaCAhwk">http://www.youtube.com/watch?v=I1fFYaCAhwk</a>
+                    <a href="http://www.youtube.com/watch?v=I1fFYaCAhwk">http://www.youtube.com/watch?v=UuFWTi6LogY</a>
+                    <a href="http://www.youtube.com/watch?v=I1fFYaCAhwk">http://www.youtube.com/watch?v=OT2CS56KXYc</a>
+                </div>
+            </div>
+            <div class="grid__cell-1-to-3">
+                fb widget
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+
+    </div>
 </div>
-{% include '@common/footer.twig' %}
+
+{#{% include '@common/header.twig' %}#}
+{#<div class="row row-wrapper">#}
+	{#<div class="span3">#}
+		{#{{ block('left') }}#}
+	{#</div>#}
+	{#<div class="span9">#}
+		{#{{ block('breadcrumbs') }}#}
+		{#<h1>{{ this.pageTitle }}</h1>#}
+
+		{#<div id="content">#}
+		{#{{ block('content') }}#}
+		{#</div>#}
+	{#</div>#}
+{#</div>#}
+{#{% include '@common/footer.twig' %}#}
 </body>
 </html>
