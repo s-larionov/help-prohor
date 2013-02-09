@@ -396,44 +396,7 @@ table {
     border-spacing: 0;
 }
 
-html {
-  background: image-url("body-pattern.png") repeat center top fixed;
-}
-
 body {
-  background: image-url("mountain-bg.png") no-repeat center 30px;
   font-family: "Arial", "Tahoma", sans-serif;
-  font-size: 16px;
-  line-height: 1.6em;
-  color: $basic-font-color;
+  font-size: 14px;
 }
-
-a,
-a:hover {
-  //color: #526e1e;
-  color: #5c8315;
-  text-decoration: none;
-}
-
-p {
-  margin: 0 0 1.6em 0;
-}
-
-h1, h2, h3, h4, h5 {
-  font-family: $lobster;
-}
-
-h1 {
-  font-size: 2em;
-  line-height: 1.4em;
-  margin: 0.67em 0;
-}
-
-h2 {
-  font-size: 24px;
-  line-height: 1.4em;
-  margin: 0.67em 0;
-}
-
-
-

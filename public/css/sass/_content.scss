@@ -1,0 +1,118 @@
+.wrap {
+  max-width: 920px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0 auto;
+}
+
+.header-text {
+  font-size: 35px;
+  letter-spacing:1pt;
+  line-height: 110%;
+  color: rgb(99,122,56);
+  text-align: center;
+  @include roboto-thin;
+  @include text-shadow(0 -1px 0 rgba(0,0,0,0.8));
+}
+
+.header-description {
+  h1 {
+    @include roboto;
+    font-size:50px;
+    font-stretch: condensed;
+    letter-spacing: -1pt;
+    line-height: 98%;
+  }
+  p {
+    font-size:20px;
+    letter-spacing:-1pt;
+    line-height: 120%;
+    @include roboto-thin;
+    margin: 0;
+    span {
+      color: #999;
+    }
+  }
+  h2 {
+    @include roboto;
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: 1pt;
+    line-height: 101%;
+    color: rgb(183,20,1);
+  }
+}
+
+.header-img {
+  @include image-with-dimentions("top-image.png");
+}
+
+.collapse {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  .collapse-link {
+    display: block;
+    font-size: 14px;
+    letter-spacing: 0pt;
+    line-height: 140%;
+    color: rgb(204,204,204);
+    border-bottom: 1px solid #ccc;
+    text-decoration: none;
+    @include roboto;
+    margin-top: 10px;
+    position: relative;
+    @include after {
+      @include sp("green-arrow-down");
+      position: absolute;
+      right: 0;
+      top: 7px;
+    }
+  }
+  .collapse-content {
+    padding-bottom: 10px;
+    display: none;
+  }
+}
+
+.grey-box {
+  background-color: #ECEEEF;
+  margin-left: -10px;
+  margin-right: -10px;
+  @include box-shadow(0 1px 0 0 rgba(255,255,255,0.25), inset 0 1px 2px 0 rgba(12,51,76,0.27));
+  @include border-radius(10px);
+  padding: 30px;
+}
+
+.helping {
+  h1 {
+    font-size: 26px;
+    letter-spacing: -1pt;
+    line-height: 98%;
+    color: rgb(99,121,56);
+    @include roboto;
+    @include text-shadow(0 -1px 0 rgba(0,0,0,0.8));
+    span {
+      font-weight: bold;
+      color: #B71300;
+      @include text-shadow(0 -1px 0 rgba(0,0,0,0.8));
+      i {
+        font-style: normal;
+        font-size: 50px;
+        line-height: 140%;
+      }
+    }
+  }
+}
+
+.border-box {
+  border: 1px solid #F0F0F0;
+  @include border-radius(5px);
+  padding: 15px;
+  h3 {
+    margin-top: 0;
+  }
+  p {
+    margin-bottom: 0;
+  }
+}
