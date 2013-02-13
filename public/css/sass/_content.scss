@@ -104,7 +104,7 @@
     }
     .collapse-content {
       max-height: 1500px;
-      overflow: visible;
+      overflow: hidden;
     }
   }
   &.collapse_2-col {
@@ -148,6 +148,12 @@
         line-height: 140%;
       }
     }
+  }
+}
+
+.banks {
+  p {
+    line-height: 1.4em;
   }
 }
 
