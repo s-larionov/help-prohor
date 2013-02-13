@@ -10,7 +10,7 @@ $config = CMap::mergeArray(
 				'connectionString' => 'mysql:host=127.0.0.1;dbname=prohor_db',
 				'emulatePrepare' => true,
 				'username' => 'prohor',
-				'password' => 'j3278J^&@^HJB',
+				'password' => 'kij23@$#5',
 				'charset' => 'utf8',
 			),
 		),
