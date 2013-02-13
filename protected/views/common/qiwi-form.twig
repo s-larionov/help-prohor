@@ -1,3 +1,16 @@
-<form action="{{ this.createUrl('qiwi/bill') }}" method="post">
-
-</form>
+<div class="border-box">
+	<h3>Оплатить онлайн через QIWI</h3>
+	<form id="qiwi" action="{{ this.createUrl('qiwi/bill') }}" method="post" data-qiwi="https://qiwi.ru/order/list.action">
+		<div class="fields-row">
+			<label for="qiwi-phone">
+				Номер телефона <span class="comment">последние 10 цифр номера</span>
+				<input id="qiwi-phone" type="text" name="user" placeholder="924 134-56-78"/>
+			</label>
+			<label for="qiwi-amount">
+				Сумма <span class="comment">в рублях</span>
+				<input id="qiwi-amount" type="text" name="amount" placeholder="500"/>
+			</label>
+		</div>
+		<button type="submit">Выставить счет</button> <span>и перейти на сайт QIWI для оплаты</span>
+	</form>
+</div>

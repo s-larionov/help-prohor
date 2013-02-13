@@ -9,6 +9,7 @@ class m130212_143628_init_tables extends DbMigration {
 			'date'     => 'timestamp NULL DEFAULT NULL',
 			'lifetime' => 'timestamp NULL DEFAULT NULL',
 			'status'   => 'tinyint(1) unsigned NOT NULL DEFAULT 50', // default status READY (@see EQiwiBill::STATUS_*)
+			'comment'  => 'mediumtext NULL DEFAULT NULL',
 			'created'  => 'timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP',
 			'PRIMARY KEY (id)',
 		]);

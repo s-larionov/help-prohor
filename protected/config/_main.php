@@ -85,6 +85,7 @@ return array(
 	),
 
 	'params'         => array(
-		'adminEmail' => 'sergey@larionov.biz',
+		'adminEmail'         => 'sergey@larionov.biz',
+		'qiwiPaymentComment' => 'Благотворительная помощь Проше Писачеву',
 	),
 );

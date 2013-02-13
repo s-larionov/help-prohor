@@ -180,6 +180,71 @@
   p {
     margin-bottom: 0;
   }
+
+	form {
+		label {
+			display: block;
+			margin-bottom: 10px;
+
+			.comment {
+				display: block;
+				font-size: 11px;
+				color: #999;
+			}
+
+			input {
+				display: block;
+				font-size: 16px;
+				padding: 5px;
+				margin: 5px 0;
+			}
+		}
+
+		.fields-row {
+			@extend %clearfix;
+
+			label {
+				@include box-sizing(border-box);
+				float: left;
+				width: 50%;
+				padding-left: 5px;
+
+				&:first-child {
+					padding-left: 0;
+					padding-right: 5px;
+				}
+
+				input {
+					@include box-sizing(border-box);
+					width: 100%;
+					border: 1px solid #999;
+
+					&.error {
+						border: 1px solid #b71401;
+					}
+				}
+			}
+		}
+
+		button {
+			padding: 10px;
+			text-align: left;
+			font-size: 15px;
+			border: 0 none;
+			margin-right: 10px;
+			@include background-image(linear-gradient(top, rgb(210,225,170), rgb(138,149,94)));
+			@include border-radius(5px);
+
+			&:hover {
+				@include background-image(linear-gradient(top, rgb(230,245,190), rgb(158,169,114)));
+			}
+
+			small {
+				display: block;
+				font-size: 11px;
+			}
+		}
+	}
 }
 
 .grid {

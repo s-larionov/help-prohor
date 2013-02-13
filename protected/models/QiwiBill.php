@@ -35,9 +35,18 @@ class QiwiBill extends ActiveRecord {
 	public function rules() {
 		return array(
 			array('user, amount', 'required'),
-			array('id, amount, status', 'numerical'),
+			array('id, status', 'numerical'),
+			array('amount', 'numerical', 'min' => 0.01, 'max' => 15000),
 			array('id, created', 'unsafe'),
+			array('user', 'match', 'pattern' => '~^\d{10}$~', 'allowEmpty' => false),
 			array('user, amount, date, lifetime, status', 'safe'),
+		);
+	}
+
+	public function attributeLabels() {
+		return array(
+			'user' => 'Номер телефона',
+			'amount' => 'Сумма',
 		);
 	}
 }

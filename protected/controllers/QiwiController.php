@@ -1,9 +1,41 @@
 <?php
 
 class QiwiController extends BaseController {
+//	public function filters() {
+//		return array(
+//			'postOnly +bill',
+//			'ajaxOnly +bill',
+//		);
+//	}
+
 	public function actionBill() {
-		/** @var $qiwi QiwiComponent */
-		$qiwi = Yii::app()->qiwi;
+		$request = Yii::app()->request;
+
+		$bill             = new QiwiBill();
+		$bill->attributes = array(
+			'user'   => str_replace([' ', '-'], ['', ''], $request->getPost('user')),
+			'amount' => $request->getPost('amount'),
+		);
+
+		if ($bill->save()) {
+			try {
+				Yii::app()->qiwi->createBill($bill->user, $bill->amount, $bill->id, Yii::app()->params->itemAt('qiwiPaymentComment')? : 'Payment on website ' . Yii::app()->name);
+				$this->renderJson(array(
+					'status' => 'success',
+					'id'     => $bill->id,
+				));
+			} catch (EQiwiSoapException $e) {
+				$this->renderJson(array(
+					'status' => 'error',
+					'errors' => $e->getMessage(),
+				));
+			}
+		}
+
+		$this->renderJson(array(
+			'status' => 'error',
+			'errors' => $bill->errors,
+		));
 	}
 
 	public function actionSuccess() {
