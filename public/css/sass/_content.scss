@@ -57,6 +57,17 @@
   margin-left: -30px;
 }
 
+.letter {
+  padding: 10px 0;
+  p, ul {
+    font-size: 15px;
+    margin-bottom: 1em;
+  }
+  li {
+    padding-bottom: 0.5em;
+  }
+}
+
 .collapse {
   list-style: none;
   margin: 0;
@@ -81,8 +92,20 @@
     }
   }
   .collapse-content {
-    padding-bottom: 10px;
-    display: none;
+    max-height: 0;
+    @include transition(max-height 0.4s);
+    overflow: hidden;
+  }
+  .active {
+    .collapse-link {
+      @include after {
+        @include sp("green-arrow-up");
+      }
+    }
+    .collapse-content {
+      max-height: 1500px;
+      overflow: visible;
+    }
   }
   &.collapse_2-col {
     .collapse-item {
