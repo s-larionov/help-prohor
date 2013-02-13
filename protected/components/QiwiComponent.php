@@ -93,7 +93,7 @@ class QiwiComponent extends CApplicationComponent {
 	 * @throws CException
 	 * @return boolean
 	 */
-	public function createBill($user, $amount, $txn, $comment, $lifetime = '', $alarm = EQiwiCreateBillRequest::ALARM_SMS, $create = true) {
+	public function createBill($user, $amount, $txn, $comment, $lifetime = '', $alarm = EQiwiCreateBillRequest::ALARM_NONE, $create = true) {
 		return $this->getSoapClient()
 			->createBill(new EQiwiCreateBillRequest($this->username, $this->password, $user, $amount, $txn, $comment, $lifetime, $alarm, $create));
 	}
