@@ -2,7 +2,7 @@
 (function() {
 
   $(function() {
-    return $(".collapse").each(function() {
+    $(".collapse").each(function() {
       return $(this).find(".collapse-link").on("click", function() {
         var parent;
         parent = $(this).parent();
@@ -13,6 +13,10 @@
         }
         return false;
       });
+    });
+    return $(".documents-scans a").fancybox({
+      openEffect: 'none',
+      closeEffect: 'none'
     });
   });
 

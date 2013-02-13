@@ -7,4 +7,11 @@ $(->
       else
         parent.addClass("active")
       false
+
+  $(".documents-scans a").fancybox
+    openEffect	: 'none'
+    closeEffect	: 'none'
+
+
+
 )

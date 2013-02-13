@@ -1,3 +1,4 @@
+@import url(../../js/fancybox/jquery.fancybox.css);
 @font-face {
   font-family: "Roboto";
   src: url(/fonts/roboto-thin.woff) format('woff');
@@ -597,6 +598,11 @@ a:hover {
 }
 
 /* line 123, sass/_content.scss */
+.documents-scans {
+  padding-top: 10px;
+}
+
+/* line 127, sass/_content.scss */
 .grey-box {
   background-color: #ECEEEF;
   margin-left: -10px;
@@ -612,7 +618,7 @@ a:hover {
   padding: 30px;
 }
 
-/* line 133, sass/_content.scss */
+/* line 137, sass/_content.scss */
 .helping h1 {
   margin-top: 0;
   font-size: 26px;
@@ -622,25 +628,25 @@ a:hover {
   font-weight: 500;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.8);
 }
-/* line 141, sass/_content.scss */
+/* line 145, sass/_content.scss */
 .helping h1 span {
   font-weight: bold;
   color: #B71300;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.8);
 }
-/* line 145, sass/_content.scss */
+/* line 149, sass/_content.scss */
 .helping h1 span i {
   font-style: normal;
   font-size: 50px;
   line-height: 140%;
 }
 
-/* line 155, sass/_content.scss */
+/* line 159, sass/_content.scss */
 .banks p {
   line-height: 1.4em;
 }
 
-/* line 160, sass/_content.scss */
+/* line 164, sass/_content.scss */
 .heading-red {
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
@@ -650,7 +656,7 @@ a:hover {
   text-align: center;
 }
 
-/* line 168, sass/_content.scss */
+/* line 172, sass/_content.scss */
 .border-box {
   border: 1px solid #F0F0F0;
   -webkit-border-radius: 5px;
@@ -661,126 +667,126 @@ a:hover {
   padding: 15px;
   margin-bottom: 18px;
 }
-/* line 173, sass/_content.scss */
+/* line 177, sass/_content.scss */
 .border-box h3 {
   margin-top: 0;
 }
-/* line 176, sass/_content.scss */
+/* line 180, sass/_content.scss */
 .border-box p {
   margin-bottom: 0;
 }
 
-/* line 185, sass/_content.scss */
+/* line 189, sass/_content.scss */
 .grid__cell, .grid__cell-1-to-2, .grid__cell-2-to-3, .grid__cell-1-to-3 {
   float: left;
   margin-left: 1.999%;
 }
-/* line 188, sass/_content.scss */
+/* line 192, sass/_content.scss */
 .grid__cell:first-child, .grid__cell-1-to-2:first-child, .grid__cell-2-to-3:first-child, .grid__cell-1-to-3:first-child {
   margin-left: 0;
 }
 
-/* line 193, sass/_content.scss */
+/* line 197, sass/_content.scss */
 .grid__cell-1-to-2 {
   width: 49%;
 }
 
-/* line 198, sass/_content.scss */
+/* line 202, sass/_content.scss */
 .grid__cell-2-to-3 {
   width: 65.33333%;
 }
 
-/* line 203, sass/_content.scss */
+/* line 207, sass/_content.scss */
 .grid__cell-1-to-3 {
   width: 32.66667%;
 }
 
-/* line 208, sass/_content.scss */
+/* line 212, sass/_content.scss */
 .carousel {
   padding: 15px 20px;
   overflow: hidden;
   position: relative;
 }
-/* line 212, sass/_content.scss */
+/* line 216, sass/_content.scss */
 .carousel ul {
   list-style: none;
   margin: 0;
   padding: 0;
   width: 10000px;
 }
-/* line 218, sass/_content.scss */
+/* line 222, sass/_content.scss */
 .carousel li {
   float: left;
   width: 207px;
   height: 207px;
   margin: 0 46px;
 }
-/* line 225, sass/_content.scss */
+/* line 229, sass/_content.scss */
 .carousel .carousel-prev,
 .carousel .carousel-next {
   position: absolute;
 }
 
-/* line 231, sass/_content.scss */
+/* line 235, sass/_content.scss */
 .links p {
   line-height: 140%;
 }
 
-/* line 236, sass/_content.scss */
+/* line 240, sass/_content.scss */
 .social-widget {
   padding: 20px 0;
   text-align: right;
 }
-/* line 239, sass/_content.scss */
+/* line 243, sass/_content.scss */
 .social-widget #vk_groups {
   float: right;
 }
 
-/* line 244, sass/_content.scss */
+/* line 248, sass/_content.scss */
 .link__border {
   border-bottom: 1px solid #cccccc;
 }
 
-/* line 248, sass/_content.scss */
+/* line 252, sass/_content.scss */
 .social {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 253, sass/_content.scss */
+/* line 257, sass/_content.scss */
 .social li {
   float: left;
   margin-right: 10px;
 }
-/* line 257, sass/_content.scss */
+/* line 261, sass/_content.scss */
 .social .social-fb {
   display: block;
   width: 36px;
   height: 37px;
   background: url('/images/sprite-s03dad00836.png') 0 -118px no-repeat;
 }
-/* line 261, sass/_content.scss */
+/* line 265, sass/_content.scss */
 .social .social-od {
   display: block;
   width: 36px;
   height: 37px;
   background: url('/images/sprite-s03dad00836.png') 0 -81px no-repeat;
 }
-/* line 265, sass/_content.scss */
+/* line 269, sass/_content.scss */
 .social .social-vk {
   display: block;
   width: 37px;
   height: 37px;
   background: url('/images/sprite-s03dad00836.png') 0 -155px no-repeat;
 }
-/* line 269, sass/_content.scss */
+/* line 273, sass/_content.scss */
 .social .social-vladmama {
   display: block;
   width: 145px;
   height: 37px;
   background: url('/images/sprite-s03dad00836.png') 0 -7px no-repeat;
 }
-/* line 273, sass/_content.scss */
+/* line 277, sass/_content.scss */
 .social .social-drom {
   display: block;
   width: 100px;
@@ -788,7 +794,7 @@ a:hover {
   background: url('/images/sprite-s03dad00836.png') 0 -44px no-repeat;
 }
 
-/* line 279, sass/_content.scss */
+/* line 283, sass/_content.scss */
 .heading-tel {
   font-size: 23px;
   line-height: 120%;
@@ -797,20 +803,20 @@ a:hover {
   padding: 20px 0;
   text-align: center;
 }
-/* line 285, sass/_content.scss */
+/* line 289, sass/_content.scss */
 .heading-tel a {
   display: block;
   font-family: "Arial", "Tahoma", sans-serif;
   font-size: 16px;
 }
 
-/* line 292, sass/_content.scss */
+/* line 296, sass/_content.scss */
 .footer {
   background: url('/images/footer.png?1360206589') no-repeat;
   padding: 30px 10px;
   position: relative;
 }
-/* line 297, sass/_content.scss */
+/* line 301, sass/_content.scss */
 .footer .footer-text {
   float: left;
   margin-right: 40px;
@@ -818,11 +824,11 @@ a:hover {
   font-size: 15px;
   line-height: 130%;
 }
-/* line 303, sass/_content.scss */
+/* line 307, sass/_content.scss */
 .footer .footer-text span {
   color: #000;
 }
-/* line 307, sass/_content.scss */
+/* line 311, sass/_content.scss */
 .footer .footer-copyrights {
   position: absolute;
   bottom: 10px;
