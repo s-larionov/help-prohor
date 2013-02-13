@@ -58,7 +58,7 @@ location ~ /\. {
 	deny all;
 }
 
-location ~ ^(.+\.(js|css|jpg|gif|png|ico|swf|mp3|html|eot|woff|ttf|svg))$ {
+location ~ ^(.+\.(js|css|jpg|gif|png|ico|swf|mp3|html|eot|woff|ttf|svg|wsdl|zip|rar|pdf))$ {
 	try_files $uri /$bootstrap?$args;
 }
 

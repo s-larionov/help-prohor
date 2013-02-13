@@ -1,3 +1,6 @@
 [submodule "protected/extensions/twig"]
 	path = protected/extensions/twig
 	url = git://github.com/fabpot/Twig.git
+[submodule "protected/extensions/qiwi-soap"]
+	path = protected/extensions/qiwi-soap
+	url = git@github.com:s-larionov/yii-qiwi-soap.git

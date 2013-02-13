@@ -12,7 +12,8 @@ return array(
 		'application.models.*',
 		'application.components.*',
 		'ext.navigation.*',
-		'ext.fs-tools.*',
+		'ext.qiwi-soap.*',
+		'ext.qiwi-soap.models.*',
 	),
 
 	'language'       => 'ru',
@@ -20,7 +21,7 @@ return array(
 
 	// application components
 	'components'     => array(
-		'urlManager'    => array(
+		'urlManager'   => array(
 			'urlFormat'        => 'path',
 			'caseSensitive'    => true,
 			'matchValue'       => true,
@@ -29,17 +30,17 @@ return array(
 			'useStrictParsing' => true,
 			'rules'            => require('_routes.php'),
 		),
-		'db'            => array(
+		'db'           => array(
 			'connectionString' => 'mysql:host=localhost;dbname=main',
 			'emulatePrepare'   => true,
 			'username'         => 'root',
 			'password'         => '',
 			'charset'          => 'utf8',
 		),
-		'errorHandler'  => array(
+		'errorHandler' => array(
 			'errorAction' => 'main/error',
 		),
-		'log'           => array(
+		'log'          => array(
 			'class'  => 'CLogRouter',
 			'routes' => array(
 				array(
@@ -48,7 +49,7 @@ return array(
 				),
 			),
 		),
-		'viewRenderer'  => array(
+		'viewRenderer' => array(
 			'class'         => 'ext.ETwigViewRenderer',
 			'twigPathAlias' => 'ext.twig.lib.Twig',
 			'fileExtension' => '.twig',
@@ -63,21 +64,27 @@ return array(
 				'merge' => 'array_merge',
 			),
 			'globals'       => array(
-				'Nav'   => 'Navigation',
-				'Yii'   => 'Yii',
+				'Nav' => 'Navigation',
+				'Yii' => 'Yii',
 			),
 		),
-		'clientScript'  => array(
+		'clientScript' => array(
 			'packages' => array(
-				'jquery'    => array(
+				'jquery' => array(
 					'baseUrl' => '/js/',
 					'js'      => array('jquery.min.js'),
 				),
 			)
 		),
+		'qiwi'         => array(
+			'class'    => 'application.components.QiwiComponent',
+			'server'   => 'http://ishop.qiwi.ru/services/ishop',
+			'username' => '218686',
+			'password' => 'CFTOd6Jj',
+		),
 	),
 
 	'params'         => array(
-		'adminEmail'     => 'sergey@larionov.biz',
+		'adminEmail' => 'sergey@larionov.biz',
 	),
 );
