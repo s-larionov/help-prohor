@@ -32,9 +32,9 @@
   }
   p {
     font-size:20px;
-    letter-spacing:-1pt;
+    //letter-spacing:-1pt;
     line-height: 120%;
-    @include roboto-thin;
+    //@include roboto-thin;
     margin: 0;
     span {
       color: #999;
