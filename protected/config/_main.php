@@ -54,8 +54,7 @@ return array(
 			'twigPathAlias' => 'ext.twig.lib.Twig',
 			'fileExtension' => '.twig',
 			'paths'         => array(
-				'layouts' => 'application.views.layouts',
-				'common'  => 'application.views.common',
+				'__main__' => 'application.views',
 			),
 			'functions'     => array(
 				'count' => 'count',
