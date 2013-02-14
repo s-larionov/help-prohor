@@ -125,11 +125,11 @@ $sprite: sprite-map("sprite/*.png", $new-position: 0%, $new-spacing: 10px);
 //
 
 @mixin roboto-thin {
-	font-family: 'Roboto', sans-serif;
-	font-weight: 100;
+	font-family: 'RobotoThin', sans-serif;
+	//font-weight: 100;
 }
 
 @mixin roboto {
-	font-family: 'Roboto', sans-serif;
-	font-weight: 500;
+	font-family: 'RobotoRegular', sans-serif;
+	//font-weight: 500;
 }
