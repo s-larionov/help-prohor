@@ -1,14 +1,14 @@
 @import url(../../js/fancybox/jquery.fancybox.css);
 @font-face {
   font-family: "RobotoRegular";
-  src: url('/css/fonts/Roboto-Medium-webfont.eot');
-  src: url('/css/fonts/Roboto-Medium-webfont.eot?#iefix') format('eot'), url('/css/fonts/Roboto-Medium-webfont.woff') format('woff'), url('/css/fonts/Roboto-Medium-webfont.ttf') format('truetype'), url('/css/fonts/Roboto-Medium-webfont.svg') format('svg');
+  src: url('/fonts/Roboto-Medium-webfont.eot');
+  src: url('/fonts/Roboto-Medium-webfont.eot?#iefix') format('eot'), url('/fonts/Roboto-Medium-webfont.woff') format('woff'), url('/fonts/Roboto-Medium-webfont.ttf') format('truetype'), url('/fonts/Roboto-Medium-webfont.svg') format('svg');
 }
 
 @font-face {
   font-family: "RobotoThin";
-  src: url('/css/fonts/Roboto-Light-webfont.eot');
-  src: url('/css/fonts/Roboto-Light-webfont.eot?#iefix') format('eot'), url('/css/fonts/Roboto-Light-webfont.woff') format('woff'), url('/css/fonts/Roboto-Light-webfont.ttf') format('truetype'), url('/css/fonts/Roboto-Light-webfont.svg') format('svg');
+  src: url('/fonts/Roboto-Light-webfont.eot');
+  src: url('/fonts/Roboto-Light-webfont.eot?#iefix') format('eot'), url('/fonts/Roboto-Light-webfont.woff') format('woff'), url('/fonts/Roboto-Light-webfont.ttf') format('truetype'), url('/fonts/Roboto-Light-webfont.svg') format('svg');
 }
 
 /* line 94, sass/_mixins.scss */
