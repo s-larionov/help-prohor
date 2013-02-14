@@ -2,37 +2,37 @@
 // Pseudo elements
 //
 @mixin after() {
-  &:after {
-    content: "";
-    display: block;
-    @content;
-  }
+	&:after {
+		content: "";
+		display: block;
+		@content;
+	}
 }
 
 @mixin before() {
-  &:before {
-    content: "";
-    display: block;
-    @content;
-  }
+	&:before {
+		content: "";
+		display: block;
+		@content;
+	}
 }
 
 //
 // Images
 //
 @mixin image-with-dimentions($image) {
-  background-image: image-url($image);
-  width: image-width($image);
-  height: image-height($image);
+	background-image: image-url($image);
+	width: image-width($image);
+	height: image-height($image);
 }
 
 //
 // Lists
 //
 @mixin clear-list() {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
 //
@@ -41,81 +41,83 @@
 $sprite: sprite-map("sprite/*.png", $new-position: 0%, $new-spacing: 10px);
 
 @mixin sp($name) {
-  width: image-width(sprite-file($sprite, $name));
-  height: image-height(sprite-file($sprite, $name));
-  background: sprite($sprite, $name) no-repeat;
+	width: image-width(sprite-file($sprite, $name));
+	height: image-height(sprite-file($sprite, $name));
+	background: sprite($sprite, $name) no-repeat;
 }
 
 @mixin after-sp-vertical-middle($name) {
-  @include after() {
-    @include sp($name);
-    position: absolute;
-    top: 50%;
-    margin-top: -(image-height(sprite-file($sprite, $name))/2);
-    @content;
-  }
+	@include after() {
+		@include sp($name);
+		position: absolute;
+		top: 50%;
+		margin-top: -(image-height(sprite-file($sprite, $name))/2);
+		@content;
+	}
 }
 
 @mixin after-sp-horizontal-center($name) {
-  @include after() {
-    @include sp($name);
-    position: absolute;
-    left: 50%;
-    margin-left: -(image-width(sprite-file($sprite, $name))/2);
-    @content;
-  }
+	@include after() {
+		@include sp($name);
+		position: absolute;
+		left: 50%;
+		margin-left: -(image-width(sprite-file($sprite, $name))/2);
+		@content;
+	}
 }
 
 @mixin after-sp-centered($name) {
-  @include after() {
-    @include sp($name);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -(image-height(sprite-file($sprite, $name))/2);
-    margin-left: -(image-width(sprite-file($sprite, $name))/2);
-    @content;
-  }
+	@include after() {
+		@include sp($name);
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-top: -(image-height(sprite-file($sprite, $name))/2);
+		margin-left: -(image-width(sprite-file($sprite, $name))/2);
+		@content;
+	}
 }
 
 @mixin before-sp-horizontal-center($name) {
-  @include before() {
-    @include sp($name);
-    position: absolute;
-    left: 50%;
-    margin-left: -(image-width(sprite-file($sprite, $name))/2);
-    @content;
-  }
+	@include before() {
+		@include sp($name);
+		position: absolute;
+		left: 50%;
+		margin-left: -(image-width(sprite-file($sprite, $name))/2);
+		@content;
+	}
 }
 
 //
 // Helpers
 //
 %clearfix {
-  zoom: 1;
-  &:before,
-  &:after {
-    content: " ";
-    display: table;
-  }
-  &:after {
-    clear: both;
-  }
+	zoom: 1;
+	&:before,
+	&:after {
+		content: " ";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
 }
 
 @mixin placeholder {
-  &::-webkit-input-placeholder {
-    @content;
-  }
-  &:-moz-placeholder { /* Firefox 18- */
-    @content;
-  }
-  &::-moz-placeholder {  /* Firefox 19+ */
-    @content;
-  }
-  &:-ms-input-placeholder {
-    @content;
-  }
+	&::-webkit-input-placeholder {
+		@content;
+	}
+	&:-moz-placeholder {
+		/* Firefox 18- */
+		@content;
+	}
+	&::-moz-placeholder {
+		/* Firefox 19+ */
+		@content;
+	}
+	&:-ms-input-placeholder {
+		@content;
+	}
 }
 
 //
@@ -123,11 +125,11 @@ $sprite: sprite-map("sprite/*.png", $new-position: 0%, $new-spacing: 10px);
 //
 
 @mixin roboto-thin {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 100;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
 }
 
 @mixin roboto {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
 }
