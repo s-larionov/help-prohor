@@ -18,10 +18,10 @@
 				<div class="collapse-content">
 					<ul>
 						{% for earning in currentMonthEarnings %}
-							<li>за {{ App.dateFormatter.format('d MMMM', earning.date)|lower }} собрано <b>{{ App.numberFormatter.format('#,##0', earning.amount) }} {{ Yii.t('app', 'рубль|рубля|рублей', earning.amount) }}</b></li>
+							<li>за {{ App.dateFormatter.format('d MMMM', earning.date)|lower }} собрано <b>{{ App.numberFormatter.format('#,##0', earning.amount) }}</b> {{ Yii.t('app', 'рубль|рубля|рублей', earning.amount) }}</li>
 						{% endfor %}
 						{% for earning in earningsGroupedByMonth %}
-							<li>за {{ App.dateFormatter.format('LLLL', earning.date)|lower }} собрано <b>{{ App.numberFormatter.format('#,##0', earning.amount) }} {{ Yii.t('app', 'рубль|рубля|рублей', earning.amount) }}</b></li>
+							<li>за {{ App.dateFormatter.format('LLLL', earning.date)|lower }} собрано <b>{{ App.numberFormatter.format('#,##0', earning.amount) }}</b> {{ Yii.t('app', 'рубль|рубля|рублей', earning.amount) }}</li>
 						{% endfor %}
 					</ul>
 					<p>Подробные отчеты можно посмотреть <a href="http://vk.com/topic-48667147_27641757" target="_blank">в группе во Вконтакте</a></p>
