@@ -1,5 +1,5 @@
-$file: "Roboto-Regular-webfont";
+$file: "Roboto-Medium-webfont";
 @include font-face("RobotoRegular", font-files($file+".woff", $file+".ttf", $file+".svg"), $file+".eot");
 
-$file: "Roboto-Thin-webfont";
+$file: "Roboto-Light-webfont";
 @include font-face("RobotoThin", font-files($file+".woff", $file+".ttf", $file+".svg"), $file+".eot");
