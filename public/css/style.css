@@ -1,14 +1,14 @@
 @import url(../../js/fancybox/jquery.fancybox.css);
 @font-face {
   font-family: "RobotoRegular";
-  src: url('/fonts/Roboto-Medium-webfont.eot');
-  src: url('/fonts/Roboto-Medium-webfont.eot?#iefix') format('eot'), url('/fonts/Roboto-Medium-webfont.woff') format('woff'), url('/fonts/Roboto-Medium-webfont.ttf') format('truetype'), url('/fonts/Roboto-Medium-webfont.svg') format('svg');
+  src: url('/css/fonts/Roboto-Medium-webfont.eot');
+  src: url('/css/fonts/Roboto-Medium-webfont.eot?#iefix') format('eot'), url('/css/fonts/Roboto-Medium-webfont.woff') format('woff'), url('/css/fonts/Roboto-Medium-webfont.ttf') format('truetype'), url('/css/fonts/Roboto-Medium-webfont.svg') format('svg');
 }
 
 @font-face {
   font-family: "RobotoThin";
-  src: url('/fonts/Roboto-Light-webfont.eot');
-  src: url('/fonts/Roboto-Light-webfont.eot?#iefix') format('eot'), url('/fonts/Roboto-Light-webfont.woff') format('woff'), url('/fonts/Roboto-Light-webfont.ttf') format('truetype'), url('/fonts/Roboto-Light-webfont.svg') format('svg');
+  src: url('/css/fonts/Roboto-Light-webfont.eot');
+  src: url('/css/fonts/Roboto-Light-webfont.eot?#iefix') format('eot'), url('/css/fonts/Roboto-Light-webfont.woff') format('woff'), url('/css/fonts/Roboto-Light-webfont.ttf') format('truetype'), url('/css/fonts/Roboto-Light-webfont.svg') format('svg');
 }
 
 /* line 94, sass/_mixins.scss */
@@ -511,7 +511,7 @@ ol {
 /* line 53, sass/_content.scss */
 .header-img {
   float: left;
-  background-image: url('/images/top-image.png?1360206586');
+  background-image: url('/images/top-image.png?1360420422');
   width: 423px;
   height: 424px;
   margin-right: 30px;
@@ -662,29 +662,29 @@ ol {
 .border-box h3 {
   margin-top: 0;
 }
-/* line 177, sass/_content.scss */
-.border-box p {
+/* line 178, sass/_content.scss */
+.border-box p:last-child {
   margin-bottom: 0;
 }
-/* line 182, sass/_content.scss */
+/* line 184, sass/_content.scss */
 .border-box form label {
   display: block;
   margin-bottom: 10px;
 }
-/* line 186, sass/_content.scss */
+/* line 188, sass/_content.scss */
 .border-box form label .comment {
   display: block;
   font-size: 11px;
   color: #999;
 }
-/* line 192, sass/_content.scss */
+/* line 194, sass/_content.scss */
 .border-box form label input {
   display: block;
   font-size: 16px;
   padding: 5px;
   margin: 5px 0;
 }
-/* line 203, sass/_content.scss */
+/* line 205, sass/_content.scss */
 .border-box form .fields-row label {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -693,12 +693,12 @@ ol {
   width: 50%;
   padding-left: 5px;
 }
-/* line 209, sass/_content.scss */
+/* line 211, sass/_content.scss */
 .border-box form .fields-row label:first-child {
   padding-left: 0;
   padding-right: 5px;
 }
-/* line 214, sass/_content.scss */
+/* line 216, sass/_content.scss */
 .border-box form .fields-row label input {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -706,11 +706,11 @@ ol {
   width: 100%;
   border: 1px solid #999;
 }
-/* line 219, sass/_content.scss */
+/* line 221, sass/_content.scss */
 .border-box form .fields-row label input.error {
   border: 1px solid #b71401;
 }
-/* line 226, sass/_content.scss */
+/* line 228, sass/_content.scss */
 .border-box form button {
   padding: 10px;
   text-align: left;
@@ -728,7 +728,7 @@ ol {
   -o-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 235, sass/_content.scss */
+/* line 237, sass/_content.scss */
 .border-box form button:hover {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e6f5be), color-stop(100%, #9ea972));
   background-image: -webkit-linear-gradient(top, #e6f5be, #9ea972);
@@ -736,123 +736,123 @@ ol {
   background-image: -o-linear-gradient(top, #e6f5be, #9ea972);
   background-image: linear-gradient(top, #e6f5be, #9ea972);
 }
-/* line 239, sass/_content.scss */
+/* line 241, sass/_content.scss */
 .border-box form button small {
   display: block;
   font-size: 11px;
 }
 
-/* line 251, sass/_content.scss */
+/* line 253, sass/_content.scss */
 .grid__cell, .grid__cell-1-to-2, .grid__cell-2-to-3, .grid__cell-1-to-3 {
   float: left;
   margin-left: 1.999%;
 }
-/* line 254, sass/_content.scss */
+/* line 256, sass/_content.scss */
 .grid__cell:first-child, .grid__cell-1-to-2:first-child, .grid__cell-2-to-3:first-child, .grid__cell-1-to-3:first-child {
   margin-left: 0;
 }
 
-/* line 259, sass/_content.scss */
+/* line 261, sass/_content.scss */
 .grid__cell-1-to-2 {
   width: 49%;
 }
 
-/* line 264, sass/_content.scss */
+/* line 266, sass/_content.scss */
 .grid__cell-2-to-3 {
   width: 65.33333%;
 }
 
-/* line 269, sass/_content.scss */
+/* line 271, sass/_content.scss */
 .grid__cell-1-to-3 {
   width: 32.66667%;
 }
 
-/* line 274, sass/_content.scss */
+/* line 276, sass/_content.scss */
 .carousel {
   padding: 15px 20px;
   overflow: hidden;
   position: relative;
 }
-/* line 278, sass/_content.scss */
+/* line 280, sass/_content.scss */
 .carousel ul {
   list-style: none;
   margin: 0;
   padding: 0;
   width: 10000px;
 }
-/* line 284, sass/_content.scss */
+/* line 286, sass/_content.scss */
 .carousel li {
   float: left;
   width: 207px;
   height: 207px;
   margin: 0 46px;
 }
-/* line 291, sass/_content.scss */
+/* line 293, sass/_content.scss */
 .carousel .carousel-prev,
 .carousel .carousel-next {
   position: absolute;
 }
 
-/* line 297, sass/_content.scss */
+/* line 299, sass/_content.scss */
 .links p {
   line-height: 140%;
 }
 
-/* line 302, sass/_content.scss */
+/* line 304, sass/_content.scss */
 .social-widget {
   padding: 20px 0;
   text-align: right;
 }
-/* line 305, sass/_content.scss */
+/* line 307, sass/_content.scss */
 .social-widget #vk_groups {
   float: right;
 }
 
-/* line 310, sass/_content.scss */
+/* line 312, sass/_content.scss */
 .link__border {
   border-bottom: 1px solid #cccccc;
 }
 
-/* line 314, sass/_content.scss */
+/* line 316, sass/_content.scss */
 .social {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 319, sass/_content.scss */
+/* line 321, sass/_content.scss */
 .social li {
   float: left;
   margin-right: 10px;
 }
-/* line 323, sass/_content.scss */
+/* line 325, sass/_content.scss */
 .social .social-fb {
   display: block;
   width: 36px;
   height: 37px;
   background: url('/images/sprite-s03dad00836.png') 0 -118px no-repeat;
 }
-/* line 327, sass/_content.scss */
+/* line 329, sass/_content.scss */
 .social .social-od {
   display: block;
   width: 36px;
   height: 37px;
   background: url('/images/sprite-s03dad00836.png') 0 -81px no-repeat;
 }
-/* line 331, sass/_content.scss */
+/* line 333, sass/_content.scss */
 .social .social-vk {
   display: block;
   width: 37px;
   height: 37px;
   background: url('/images/sprite-s03dad00836.png') 0 -155px no-repeat;
 }
-/* line 335, sass/_content.scss */
+/* line 337, sass/_content.scss */
 .social .social-vladmama {
   display: block;
   width: 145px;
   height: 37px;
   background: url('/images/sprite-s03dad00836.png') 0 -7px no-repeat;
 }
-/* line 339, sass/_content.scss */
+/* line 341, sass/_content.scss */
 .social .social-drom {
   display: block;
   width: 100px;
@@ -860,7 +860,7 @@ ol {
   background: url('/images/sprite-s03dad00836.png') 0 -44px no-repeat;
 }
 
-/* line 345, sass/_content.scss */
+/* line 347, sass/_content.scss */
 .heading-tel {
   font-size: 23px;
   line-height: 120%;
@@ -868,20 +868,20 @@ ol {
   padding: 20px 0;
   text-align: center;
 }
-/* line 351, sass/_content.scss */
+/* line 353, sass/_content.scss */
 .heading-tel a {
   display: block;
   font-family: "Arial", "Tahoma", sans-serif;
   font-size: 16px;
 }
 
-/* line 358, sass/_content.scss */
+/* line 360, sass/_content.scss */
 .footer {
-  background: url('/images/footer.png?1360206589') no-repeat;
+  background: url('/images/footer.png?1360420422') no-repeat;
   padding: 30px 10px;
   position: relative;
 }
-/* line 363, sass/_content.scss */
+/* line 365, sass/_content.scss */
 .footer .footer-text {
   float: left;
   margin-right: 40px;
@@ -889,11 +889,11 @@ ol {
   font-size: 15px;
   line-height: 130%;
 }
-/* line 369, sass/_content.scss */
+/* line 371, sass/_content.scss */
 .footer .footer-text span {
   color: #000;
 }
-/* line 373, sass/_content.scss */
+/* line 375, sass/_content.scss */
 .footer .footer-copyrights {
   position: absolute;
   bottom: 10px;
@@ -901,7 +901,7 @@ ol {
   color: #999;
 }
 
-/* line 381, sass/_content.scss */
+/* line 383, sass/_content.scss */
 .gray-color {
   color: #999;
   font-size: 12px;
