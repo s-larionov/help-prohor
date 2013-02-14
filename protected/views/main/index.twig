@@ -5,8 +5,9 @@
 {% block content %}
 	<div class="content">
 	<div class="grey-box helping">
+		{#{{ earningAmount }}#}
 		<h1>На лечение Проши требуется собрать еще<br>
-			<span><i>10 208 176</i> рублей</span> из 15 000 000 рублей</h1>
+			<span><i>{{ App.numberFormatter.format('#,##0', needAmount - earnedAmount) }}</i> рублей</span> из {{ App.numberFormatter.format('#,##0', needAmount) }} рублей</h1>
 
 		<p>Сумма ориентировочная. Мы надеемся, что Проша пойдет на поправку, и сумма если и будет меняться, то в меньшую
 			сторону.</p>
@@ -15,7 +16,15 @@
 				<a class="collapse-link" href="#">Информация по поступлениям средств</a>
 
 				<div class="collapse-content">
-
+					<ul>
+						{% for earning in currentMonthEarnings %}
+							<li>за {{ App.dateFormatter.format('d MMMM', earning.date)|lower }} собрано <b>{{ App.numberFormatter.format('#,##0', earning.amount) }} {{ Yii.t('app', 'рубль|рубля|рублей', earning.amount) }}</b></li>
+						{% endfor %}
+						{% for earning in earningsGroupedByMonth %}
+							<li>за {{ App.dateFormatter.format('LLLL', earning.date)|lower }} собрано <b>{{ App.numberFormatter.format('#,##0', earning.amount) }} {{ Yii.t('app', 'рубль|рубля|рублей', earning.amount) }}</b></li>
+						{% endfor %}
+					</ul>
+					<p>Подробные отчеты можно посмотреть <a href="http://vk.com/topic-48667147_27641757" target="_blank">в группе во Вконтакте</a></p>
 				</div>
 			</li>
 		</ul>

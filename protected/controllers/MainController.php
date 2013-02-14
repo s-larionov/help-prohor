@@ -2,7 +2,12 @@
 
 class MainController extends BaseController {
 	public function actionIndex() {
-		$this->render('index');
+		$this->render('index', array(
+			'needAmount' => Yii::app()->params->itemAt('needAmount'),
+			'earnedAmount' => Earning::model()->summary()->find()->amount,
+			'currentMonthEarnings' => Earning::model()->currentMonth()->findAll(),
+			'earningsGroupedByMonth' => Earning::model()->groupByMonth()->excludeCurrentMonth()->findAll(),
+		));
 	}
 
 	public function actionError() {

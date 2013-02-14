@@ -13,6 +13,13 @@ class m130212_143628_init_tables extends DbMigration {
 			'created'  => 'timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP',
 			'PRIMARY KEY (id)',
 		]);
+		$this->createTable('earning', [
+			'id'       => 'int(8) unsigned NOT NULL AUTO_INCREMENT',
+			'date'     => 'timestamp NULL DEFAULT NULL',
+			'amount'   => 'float NOT NULL',
+			'created'  => 'timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP',
+			'PRIMARY KEY (id)',
+		]);
 	}
 
 	public function safeDown() {

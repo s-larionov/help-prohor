@@ -92,6 +92,10 @@
 		max-height: 0;
 		@include transition(max-height 0.4s);
 		overflow: hidden;
+
+		:last-child{
+			margin-bottom: 0;
+		}
 	}
 	.active {
 		.collapse-link {
