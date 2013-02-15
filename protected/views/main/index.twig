@@ -18,10 +18,14 @@
 				<div class="collapse-content">
 					<ul>
 						{% for earning in currentMonthEarnings %}
-							<li>за {{ App.dateFormatter.format('d MMMM', earning.date)|lower }} собрано <b>{{ App.numberFormatter.format('#,##0', earning.amount) }}</b> {{ Yii.t('app', 'рубль|рубля|рублей', earning.amount) }}</li>
+							<li>за {{ App.dateFormatter.format('d MMMM', earning.date)|lower }} собрано
+								<b>{{ App.numberFormatter.format('#,##0', earning.amount) }}</b> {{ Yii.t('app', 'рубль|рубля|рублей', earning.amount) }}
+							</li>
 						{% endfor %}
 						{% for earning in earningsGroupedByMonth %}
-							<li>за {{ App.dateFormatter.format('LLLL', earning.date)|lower }} собрано <b>{{ App.numberFormatter.format('#,##0', earning.amount) }}</b> {{ Yii.t('app', 'рубль|рубля|рублей', earning.amount) }}</li>
+							<li>за {{ App.dateFormatter.format('LLLL', earning.date)|lower }} собрано
+								<b>{{ App.numberFormatter.format('#,##0', earning.amount) }}</b> {{ Yii.t('app', 'рубль|рубля|рублей', earning.amount) }}
+							</li>
 						{% endfor %}
 					</ul>
 					<p>Всего собрано {{ App.numberFormatter.format('#,##0', earnedAmount) }} {{ Yii.t('app', 'рубль|рубля|рублей', earnedAmount) }}.
@@ -76,7 +80,8 @@
 					8&thinsp;967&thinsp;957-14-67
 				</p>
 
-				<p class="gray-color">На данные номера возможно перечислить деньги так&nbsp;же, как вы&nbsp;это делаете, пополняя
+				<p class="gray-color">На данные номера возможно перечислить деньги так&nbsp;же, как вы&nbsp;это делаете,
+					пополняя
 					баланс своего мобильного счета. Оплату можно провести через терминал, у&nbsp;мобильных стоек, в&nbsp;отделениях
 					«Билайн» и&nbsp;там, где&nbsp;принимают платежи «Билайна». Эти&nbsp;деньги выводятся через банк&nbsp;наличными.</p>
 			</div>
@@ -90,7 +95,9 @@
 
 				<div class="collapse-content">
 					<ul>
-						<li>ул.&nbsp;Бородинская 46/50 пав. &#8470;&nbsp;55&nbsp;(ТЦ&nbsp;«Виктория», <span class="nowrap">Стафф-маркет</span>)</li>
+						<li>ул.&nbsp;Бородинская 46/50 пав. &#8470;&nbsp;55&nbsp;(ТЦ&nbsp;«Виктория», <span
+									class="nowrap">Стафф-маркет</span>)
+						</li>
 						<li>Храм Андрея Первозванного (на&nbsp;подводной&nbsp;лодке)</li>
 						<li>Успенский Храм&nbsp;(на&nbsp;Лазо)</li>
 						<li>ул.&nbsp;Карбышева д. 20, магазин&nbsp;автозапчастей</li>
@@ -101,18 +108,21 @@
 						<li>ул.&nbsp;Светланская, 173 (ост. Гайдамак, Центр «Здравие» имени&nbsp;Скворцова)</li>
 						<li>ул.&nbsp;Русская, 54А, &#8470;&nbsp;186, дет.&nbsp;сад «Катюша» (садик&nbsp;Проши)</li>
 						<li>ул.&nbsp;Светланская, д. 1,&nbsp;<span class="nowrap">Кросс-бар</span></li>
-						<li><span class="nowrap">пр-кт</span> 100 лет Владивостоку 150 (ост. «Заря», Фитнес-клуб «Sun&nbsp;Live»)</li>
+						<li><span class="nowrap">пр-кт</span> 100 лет Владивостоку 150 (ост. «Заря», Фитнес-клуб «Sun&nbsp;Live»)
+						</li>
 						<li>ул.&nbsp;Деревенская, 14 (ТЦ&nbsp;«Реми»&nbsp;&mdash; столик Кислородных&nbsp;коктелей)</li>
 						<li>ул.&nbsp;Русская 70Б, магазин&nbsp;«Рекси»</li>
 						<li>ул.&nbsp;Кирова 25Д&nbsp;в&nbsp;холле</li>
-						<li>ул.&nbsp;Русская, 5, <span class="nowrap">мн-н</span> <span class="nowrap">В-Лазер</span>&nbsp;Интерьер</li>
+						<li>ул.&nbsp;Русская, 5, <span class="nowrap">мн-н</span> <span class="nowrap">В-Лазер</span>&nbsp;Интерьер
+						</li>
 						<li>ул.&nbsp;Русская, 46, магазин «Азбука мебели» 1 и&nbsp;2&nbsp;этаж</li>
 						<li>ул.&nbsp;Русская 9б, магазин «Народные&nbsp;кухни»</li>
 						<li>ул.&nbsp;Овчинникова, 2&nbsp;&mdash; точка раздачи заказов&nbsp;СП&nbsp;«Точка»</li>
 						<li>ул.&nbsp;Кузнецова 8, а&nbsp;магазин&nbsp;Рублик</li>
 						<li>ост. Дальзавод, магазин&nbsp;Пчелка</li>
 						<li>Сеть детских магазинов «Счастливое&nbsp;детство»</li>
-						<li>ул.&nbsp;<span class="nowrap">пр-кт</span> 100 лет <span class="nowrap">Вл-ку</span>,&nbsp;68а;</li>
+						<li>ул.&nbsp;<span class="nowrap">пр-кт</span> 100 лет <span class="nowrap">Вл-ку</span>,&nbsp;68а;
+						</li>
 						<li>ул.&nbsp;<span class="nowrap">пр-кт</span> Кр. знамени,&nbsp;86а;</li>
 						<li>ул.&nbsp;Светланская, 106&nbsp;(ТЦ&nbsp;Авангард);</li>
 						<li>ул.&nbsp;ул. Баляева,&nbsp;62;</li>
@@ -194,14 +204,16 @@
 			<div class="link__border">
 				<h3>Ссылки</h3>
 				<ul class="social">
-					<li><a class="social-fb" target="_blank" href="http://www.facebook.com/groups/435867689815160"></a></li>
-					<li><a class="social-od" target="_blank" href="http://www.odnoklassniki.ru/group/51982246150239"></a>
+					<li><a class="social-fb" target="_blank" href="http://www.facebook.com/groups/435867689815160"></a>
+					</li>
+					<li><a class="social-od" target="_blank"
+					       href="http://www.odnoklassniki.ru/group/51982246150239"></a>
 					</li>
 					<li><a class="social-vk" target="_blank" href="http://vk.com/prosha1"></a></li>
 					<li><a class="social-vladmama" target="_blank"
-						   href="http://vladmama.ru/forum/viewtopic.php?f=201&t=197447"></a></li>
+					       href="http://vladmama.ru/forum/viewtopic.php?f=201&t=197447"></a></li>
 					<li><a class="social-drom" target="_blank"
-						   href="http://forums.drom.ru/vladivostok/t1151908308.html"></a></li>
+					       href="http://forums.drom.ru/vladivostok/t1151908308.html"></a></li>
 				</ul>
 				<p><a target="_blank" href="http://motodvd.ru/forum/viewtopic.php?f=34&t=3361">Мото-ДВ</a><br>
 					<a target="_blank" href="http://www.ura-gorod.ru/forum/viewtopic.php?f=117&t=6288&p=249016">Форум
@@ -213,7 +225,7 @@
 					<a target="_blank" href="http://www.100sp.ru/purchase.php?pid=75347">Совместные покупки</a><br>
 					<a target="_blank" href="http://helpneed.livejournal.com/468.html">ЖЖ</a></p>
 			</div>
-			<div>
+			<div class="link__border">
 				<h3>Ютуб</h3>
 
 				<p><a target="_blank" href="http://www.youtube.com/watch?v=I1fFYaCAhwk">http://www.youtube.com/watch?v=I1fFYaCAhwk</a><br>
@@ -221,6 +233,62 @@
 					<a target="_blank" href="http://www.youtube.com/watch?v=OT2CS56KXYc">http://www.youtube.com/watch?v=OT2CS56KXYc</a>
 				</p>
 			</div>
+			<div>
+				<h3>Социальные кнопки</h3>
+				<ul class="social-btns">
+					<li>
+						<div id="vk_like"></div>
+						<script type="text/javascript">
+							VK.Widgets.Like("vk_like", {type: "mini", verb: 1});
+						</script>
+					</li>
+					<li>
+						<script>!function (d, s, id) {
+								var js, fjs = d.getElementsByTagName(s)[0];
+								if (!d.getElementById(id)) {
+									js = d.createElement(s);
+									js.id = id;
+									js.src = "//platform.twitter.com/widgets.js";
+									fjs.parentNode.insertBefore(js, fjs);
+								}
+							}(document, "script", "twitter-wjs");</script>
+						<div id="fb-root"></div>
+						<script>(function (d, s, id) {
+								var js, fjs = d.getElementsByTagName(s)[0];
+								if (d.getElementById(id)) return;
+								js = d.createElement(s);
+								js.id = id;
+								js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+								fjs.parentNode.insertBefore(js, fjs);
+							}(document, 'script', 'facebook-jssdk'));</script>
+						<div class="fb-like" data-send="false" data-layout="button_count" data-width="450"
+						     data-show-faces="false" data-action="recommend"></div>
+					</li>
+					<li>
+						<a href="https://twitter.com/share" class="twitter-share-button" data-lang="ru">Твитнуть</a>
+					</li>
+					<li>
+						<div class="g-plusone" data-size="medium"></div>
+						<script type="text/javascript">
+							(function () {
+								var po = document.createElement('script');
+								po.type = 'text/javascript';
+								po.async = true;
+								po.src = 'https://apis.google.com/js/plusone.js';
+								var s = document.getElementsByTagName('script')[0];
+								s.parentNode.insertBefore(po, s);
+							})();
+						</script>
+					</li>
+					<li>
+						<a target="_blank" class="mrc__plugin_uber_like_button" href="http://connect.mail.ru/share" data-mrc-config="{'cm' : '2', 'ck' : '2', 'sz' : '20', 'st' : '1', 'tp' : 'ok'}">Нравится</a>
+						<script src="http://cdn.connect.mail.ru/js/loader.js" type="text/javascript" charset="UTF-8"></script>
+					</li>
+				</ul>
+
+
+			</div>
+
 		</div>
 		<div class="grid__cell-1-to-3 social-widget">
 			<script type="text/javascript" src="//vk.com/js/api/openapi.js?78"></script>

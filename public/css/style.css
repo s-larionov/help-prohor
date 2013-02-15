@@ -856,7 +856,28 @@ ol {
   background: url('/images/sprite-s03dad00836.png') 0 -44px no-repeat;
 }
 
+<<<<<<< HEAD
 /* line 347, sass/_content.scss */
+=======
+/* line 345, sass/_content.scss */
+.social-btns {
+  list-style: none;
+  margin: 10px 0;
+  padding: 0;
+}
+/* line 349, sass/_content.scss */
+.social-btns li {
+  display: inline-block;
+  vertical-align: top;
+  padding-right: 10px;
+}
+/* line 354, sass/_content.scss */
+.social-btns .twitter-share-button {
+  width: 100px;
+}
+
+/* line 359, sass/_content.scss */
+>>>>>>> Add social buttons
 .heading-tel {
   font-size: 23px;
   line-height: 120%;
@@ -864,20 +885,32 @@ ol {
   padding: 20px 0;
   text-align: center;
 }
+<<<<<<< HEAD
 /* line 353, sass/_content.scss */
+=======
+/* line 365, sass/_content.scss */
+>>>>>>> Add social buttons
 .heading-tel a {
   display: block;
   font-family: "Arial", "Tahoma", sans-serif;
   font-size: 16px;
 }
 
+<<<<<<< HEAD
 /* line 360, sass/_content.scss */
+=======
+/* line 372, sass/_content.scss */
+>>>>>>> Add social buttons
 .footer {
   background: url('/images/footer.png?1360420422') no-repeat;
   padding: 30px 10px;
   position: relative;
 }
+<<<<<<< HEAD
 /* line 365, sass/_content.scss */
+=======
+/* line 377, sass/_content.scss */
+>>>>>>> Add social buttons
 .footer .footer-text {
   float: left;
   margin-right: 40px;
@@ -885,11 +918,19 @@ ol {
   font-size: 15px;
   line-height: 130%;
 }
+<<<<<<< HEAD
 /* line 371, sass/_content.scss */
 .footer .footer-text span {
   color: #000;
 }
 /* line 375, sass/_content.scss */
+=======
+/* line 383, sass/_content.scss */
+.footer .footer-text span {
+  color: #000;
+}
+/* line 387, sass/_content.scss */
+>>>>>>> Add social buttons
 .footer .footer-copyrights {
   position: absolute;
   bottom: 10px;
@@ -897,7 +938,11 @@ ol {
   color: #999;
 }
 
+<<<<<<< HEAD
 /* line 383, sass/_content.scss */
+=======
+/* line 395, sass/_content.scss */
+>>>>>>> Add social buttons
 .gray-color {
   color: #999;
   font-size: 12px;
