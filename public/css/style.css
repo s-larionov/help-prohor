@@ -482,7 +482,6 @@ ol {
 }
 /* line 26, sass/_content.scss */
 .header-description h1 {
-  font-family: 'RobotoRegular', sans-serif;
   font-size: 50px;
   font-stretch: condensed;
   letter-spacing: -1pt;
@@ -500,7 +499,6 @@ ol {
 }
 /* line 43, sass/_content.scss */
 .header-description h2 {
-  font-family: 'RobotoRegular', sans-serif;
   font-size: 35px;
   font-weight: bold;
   letter-spacing: 1pt;
@@ -540,7 +538,6 @@ ol {
   color: #666;
   border-bottom: 1px solid #ccc;
   text-decoration: none;
-  font-family: 'RobotoRegular', sans-serif;
   margin-top: 10px;
   position: relative;
 }
@@ -617,7 +614,6 @@ ol {
   font-size: 26px;
   line-height: 98%;
   color: #637938;
-  font-family: 'RobotoRegular', sans-serif;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.8);
 }
 /* line 142, sass/_content.scss */
